@@ -1,0 +1,680 @@
+/*
+* Riva Theme
+* Created by : Ahmed Essa
+* website : www.ahmedessa.net
+* Restaurant version
+*/
+
+
+/* Google fonts & font family
+==================================================*/
+
+@import 'https://fonts.googleapis.com/css?family=Playball|Playfair+Display';
+
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Playball', cursive;
+*/
+
+
+/* typography
+==================================================*/
+
+h2 {
+    font-family: 'Playball', cursive;
+    text-transform: capitalize;
+}
+
+.slider-caption h2 {
+    font-size: 80px !important;
+}
+
+
+/* General
+==================================================*/
+
+.btn-orange {
+    color: #fff;
+    background-color: #F95738;
+    box-shadow: 0px 0px 25px rgba(249, 87, 56, .9);
+}
+
+.btn-orange:hover,
+.btn-orange:focus {
+    color: #fff;
+    background-color: #ed5234;
+    box-shadow: 0px 0px 30px rgba(249, 87, 56, .9);
+    outline: none;
+}
+
+.btn-white {
+    color: #333;
+    background-color: #fff;
+    box-shadow: 0px 0px 25px rgba(225, 225, 225, .9);
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    color: #333;
+    background-color: #ececec;
+    box-shadow: 0px 0px 30px rgba(225, 225, 225, .9);
+    outline: none;
+}
+
+h5 {
+    color: #F95738;
+}
+
+
+/* menu
+==================================================*/
+
+.restaurant-menu-bg {
+    background: rgba(0, 0, 0, .9);
+    padding: 0;
+}
+
+.restaurant-menu-bg .link-hover:before {
+    background: #F95738;
+}
+
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover {
+    color: #F95738;
+}
+
+
+/* slider
+==================================================*/
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    background-size: cover !important;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.slider-caption {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1
+}
+
+.slider-caption h2,
+.slider-caption p,
+.slider-caption .slider-btn-group {
+    opacity: 0;
+}
+
+.slider-caption h2 {
+    font-size: 50px;
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+.slider-caption p {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.slider-caption .slider-btn-group {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+}
+
+.slider-btn-group a {
+    margin-right: 5px;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: #333;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 3px;
+}
+
+
+/* about section
+==================================================*/
+
+.booking-bg {
+    background: url(../img/restaurant/05.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+}
+
+.booking-bg .booking-div {
+    background: rgba(0, 0, 0, .9);
+    border-radius: 0;
+    padding: 100px 50px;
+    margin-top: 0;
+}
+
+.booking-bg h2 {
+    font-family: 'Playball', cursive;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form-control:focus,
+.flatpickr-input:focus {
+    border: 2px solid #fff;
+}
+
+.flatpickr-day.today {
+    border-color: #F95738;
+}
+
+.flatpickr-day.today:focus,
+.flatpickr-day.today:hover,
+.flatpickr-day.selected,
+.flatpickr-day.selected:focus,
+.flatpickr-day.selected:hover {
+    border-color: #F95738;
+    background: #F95738;
+    color: #fff;
+}
+
+#success p,
+#error p {
+    height: 100%;
+}
+
+
+/* services section
+==================================================*/
+
+.services-box i,
+.services-box img {
+    font-size: 40px;
+    color: #998160;
+    display: block;
+    float: none;
+    width: 50px;
+    text-align: center;
+    line-height: 10px;
+    margin: 0 auto;
+}
+
+.box-content {
+    margin-left: 0;
+}
+
+.services-box {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.services-box h3 {
+    font-family: 'Playball', cursive;
+    font-size: 25px
+}
+
+.services-box p {
+    color: #999
+}
+
+
+/* menu-food section
+==================================================*/
+
+.top-menu-section {
+    background: -webkit-linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/restaurant/bg.jpg);
+    background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/restaurant/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 300px;
+    position: relative;
+}
+
+.menu-bg {
+    background-color: #F95738;
+    color: #fff;
+    padding: 80px 31px;
+    display: inline-block;
+    position: absolute;
+    top: -125px;
+}
+
+.list-item {
+    border-bottom: 2px dashed #eee;
+    padding: 20px;
+    position: relative;
+}
+
+.list-item img {
+    float: left;
+}
+
+.list-item:first-child {
+    margin-top: 20px;
+}
+
+.list-item:last-child {
+    border-bottom: none;
+    margin-bottom: 20px;
+}
+
+.menu-details {
+    margin-left: 140px;
+    margin-top: 25px;
+}
+
+.list-item h4,
+.list-item h2 {
+    color: #F95738;
+}
+
+.list-item h2 {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+}
+
+.nav-tabs {
+    position: absolute;
+    top: -60px;
+}
+
+.nav.nav-tabs>li.active>a,
+.nav.nav-tabs>li.active>a:focus,
+.nav.nav-tabs>li.active>a:hover {
+    color: #F95738;
+    cursor: default;
+    background-color: transparent;
+    border: none;
+    border-bottom-color: transparent;
+}
+
+.nav.nav-tabs>li>a {
+    color: #fff;
+    text-transform: none;
+    letter-spacing: 2px;
+    padding: 10px 5px;
+    font-size: 20px;
+    font-family: 'Playball', cursive;
+    border: none;
+}
+
+.nav-tabs {
+    border: none
+}
+
+
+/* team section
+==================================================*/
+
+#team {
+    background: #f3f3f3
+}
+
+.orange-ul li a {
+    color: #fff;
+    background-color: #F95738;
+    box-shadow: 0px 0px 25px rgba(249, 87, 56, .9);
+}
+
+.orange-ul li a:hover,
+.orange-ul li a:focus {
+    color: #fff;
+    background-color: #ed5234;
+    box-shadow: 0px 0px 30px rgba(249, 87, 56, .9);
+    outline: none;
+}
+
+
+/* work section
+==================================================*/
+
+.work-section {
+    padding: 50px 0;
+}
+
+.categories {
+    text-align: center;
+}
+
+.portfolio_filter {
+    display: inline-block;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+.portfolio_filter li {
+    display: inline-block;
+    margin: 10px
+}
+
+.portfolio_filter li a {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #666;
+}
+
+.portfolio_filter li a.active {
+    color: #333;
+    background-color: #FCCA46;
+    box-shadow: 0px 0px 25px rgba(252, 202, 70, .9);
+    padding: 3px 15px;
+    border-radius: 25px;
+}
+
+.portfolio_item h4 {
+    color: #fff;
+}
+
+
+/* testimonial section
+==================================================*/
+
+.testimonial-item {
+    text-align: center;
+}
+
+.testimonial-item img {
+    width: 100px !important;
+    margin: 0 auto;
+}
+
+.testimonial-item p {
+    font-family: 'Droid Serif', serif;
+    font-size: 20px;
+    font-style: italic;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.testimonial-item h5 {
+    font-size: 14px;
+}
+
+.owl-dot {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.owl-dot span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #F95738;
+    border-radius: 50%;
+    margin: 5px;
+    border: 2px solid transparent;
+}
+
+.owl-dot.active span {
+    background-color: transparent;
+    border: 2px solid #F95738;
+}
+
+
+/* news section
+==================================================*/
+
+.news-box-date h3 {
+    color: #F95738;
+}
+
+
+/* contact section
+==================================================*/
+
+.orange-bg {
+    background: #F95738;
+    color: #fff;
+}
+
+.orange-bg h5 {
+    color: #fff
+}
+
+.contact-info-item i {
+    color: #fff;
+}
+
+#cd-zoom-in,
+#cd-zoom-out {
+    background-color: rgba(249, 87, 56, 0.9);
+}
+
+
+/* inner blog
+==================================================*/
+
+.title-bar::after {
+    border-bottom: 5px solid #F95738;
+}
+
+.title-bar a {
+    color: #F95738;
+}
+
+.social-ul li a,
+.resent-widget .alphabet {
+    color: #fff;
+    background-color: #F95738;
+    box-shadow: 0px 0px 20px rgba(249, 87, 56, .9);
+}
+
+.quote-div {
+    border-top: 2px solid #F95738;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    border-color: #F95738;
+    background-color: #F95738;
+    box-shadow: 0px 0px 20px rgba(249, 87, 56, .9);
+}
+
+.owl-nav div {
+    color: #fff;
+    background-color: #F95738;
+    box-shadow: 0px 0px 20px rgba(249, 87, 56, .9);
+}
+
+.owl-nav div:hover,
+.owl-nav div:focus {
+    color: #fff;
+    background-color: #F95738;
+    box-shadow: 0px 0px 20px rgba(249, 87, 56, .9);
+    outline: none;
+}
+
+.social-ul li a:hover,
+.social-ul li a:focus {
+    background-color: #ed5234;
+    box-shadow: 0px 0px 30px rgba(249, 87, 56, .9);
+}
+
+
+/* popup
+==================================================*/
+
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 25px;
+    width: auto;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.white-popup h3 {
+    font-size: 27px;
+}
+
+.mfp-zoom-in {}
+
+.mfp-zoom-in .mfp-with-anim {
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+.mfp-zoom-in.mfp-bg {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.mfp-zoom-in.mfp-ready .mfp-with-anim {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.mfp-zoom-in.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-zoom-in.mfp-removing .mfp-with-anim {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+.mfp-zoom-in.mfp-removing.mfp-bg {
+    opacity: 0;
+}
+
+
+/* media
+==================================================*/
+
+@media (max-width: 990px) {
+    .full-height-section {
+        height: 100vh;
+        padding: 0;
+    }
+    .testimonial-box-2 {
+        margin-bottom: 50px;
+    }
+    #testimonials {
+        padding-bottom: 50px;
+    }
+    .menu-bg {
+        background-color: #F95738;
+        color: #fff;
+        padding: 30px 30px;
+        display: inline-block;
+        position: absolute;
+        top: -230px;
+        left: 20px;
+    }
+    .flex-centered {
+        display: block;
+    }
+    .padding-100 {
+        padding: 0 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-bg {
+        background-color: #F95738;
+        color: #fff;
+        padding: 30px 30px;
+        display: inline-block;
+        position: absolute;
+        top: -230px;
+        left: 20px;
+    }
+    .nav-tabs {
+        position: absolute;
+        top: -75px;
+    }
+}
+
+@media (max-width: 580px) {
+    .booking-bg .booking-div {
+        background: rgba(0, 0, 0, .9);
+        border-radius: 0;
+        padding: 100px 20px;
+        margin-top: 0;
+        width: 100%;
+    }
+    .navbar-fixed-top {
+        position: absolute;
+    }
+    .list-item h2 {
+        position: static;
+    }
+    .menu-bg {
+        background-color: #F95738;
+        color: #fff;
+        padding: 30px 30px;
+        display: inline-block;
+        position: absolute;
+        top: -230px;
+        left: 0;
+        margin: 0 auto;
+        right: 0;
+    }
+    .slider-caption h2 {
+        font-size: 30px !important;
+    }
+    .slider-caption p {
+        font-size: 13px;
+    }
+    .list-item img {
+        float: left;
+        width: 80px;
+    }
+    .menu-details {
+        margin-left: 100px;
+        margin-top: 0px;
+    }
+}
